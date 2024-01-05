@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+  window.console = window.console || function(t) {};
+</script>
+</head>
+<body translate="no">
+  <div class="container">
+  <div class="game">
+    <div class="cell">
+      <input type="checkbox" data-cell="0" id="cell-1" />
+      <label for="cell-1"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="1" id="cell-2" />
+      <label for="cell-2"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="2" id="cell-3" />
+      <label for="cell-3"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="3" id="cell-4" />
+      <label for="cell-4"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="4" id="cell-5" />
+      <label for="cell-5"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="5" id="cell-6" />
+      <label for="cell-6"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="6" id="cell-7" />
+      <label for="cell-7"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="7" id="cell-8" />
+      <label for="cell-8"></label>
+    </div>
+    <div class="cell">
+      <input type="checkbox" data-cell="8" id="cell-9" />
+      <label for="cell-9"></label>
+    </div>
+
+  </div>
+</div>
+<div class="modal">
+  <div class="mod-container">
+    <div class="mod-header">
+      TicTacToe
+    </div>
+    <div class="mod-body">
+      Let's play
+    </div>
+    <div class="mod-footer">
+      <div class="mark-switch">
+         Choose your mark:
+        <div class="mark">
+          <input type="radio" value="tic" name="mark-switch" id="mark-x" checked/>
+          <label id="lbl-x" class="btn" for="mark-x">&#10005;</label>
+        </div>
+        <div class="mark">
+          <input type="radio" value="tac" name="mark-switch" id="mark-o" />
+          <label id="lbl-o" class="btn" for="mark-o">&#9898;</label>
+        </div>
+      </div>
+      <div class="play-order">
+        <div class="btn" id="btn-first">Start First</div>
+        <div class="btn" id="btn-second">Start Second</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script id="rendered-js" src="script.js"></script>
+</body>
+</html>
